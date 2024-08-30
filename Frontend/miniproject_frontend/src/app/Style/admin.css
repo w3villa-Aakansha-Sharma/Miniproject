@@ -1,0 +1,120 @@
+/* app/admin/Admin.css */
+.admin-page {
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    color: #4b0082; /* Dark purple */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-filter input,
+  .search-filter select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #4b0082; /* Dark purple */
+    color: #fff;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #4b0082; /* Dark purple */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #6a0dad; /* Lighter purple */
+  }
+  
+  .active-page {
+    background-color: #6a0dad; /* Lighter purple */
+  }
+  /* admin.css */
+
+/* Custom styles for Toast Container */
+.Toastify__toast-container {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 16px;
+}
+
+/* Custom styles for individual Toast messages */
+.Toastify__toast {
+  background-color: #6a0d91; /* Purple background */
+  color: #fff; /* White text */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for better appearance */
+  font-size: 16px; /* Font size */
+  opacity: 1; /* Ensure toast is fully opaque */
+  transition: opacity 0.5s ease-in; /* Fade out smoothly */
+}
+
+/* Customize Toast Success */
+.Toastify__toast--success {
+  background-color: #28a745; /* Green background for success */
+}
+
+/* Customize Toast Error */
+.Toastify__toast--error {
+  background-color: #dc3545; /* Red background for error */
+}
+
+/* Customize Toast Info */
+.Toastify__toast--info {
+  background-color: #17a2b8; /* Blue background for info */
+}
+
+/* Customize Toast Warning */
+.Toastify__toast--warning {
+  background-color: #ffc107; /* Yellow background for warning */
+}
+
+  

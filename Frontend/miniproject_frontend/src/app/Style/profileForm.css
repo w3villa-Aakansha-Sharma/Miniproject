@@ -1,0 +1,173 @@
+/* styles/profileForm.css */
+.profile-form-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 100px auto;
+
+  
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+form{
+  text-align: center;
+}
+h2 {
+  color: #7d2ae8; /* Purple color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.update-button {
+  background-color: #7d2ae8;
+  padding: 10px 20px;
+  
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+.download-button {
+  background-color: #7d2ae8;
+  padding: 10px 20px;
+  
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color:  #7d2ae8; /* Darker purple */
+}
+
+.autocomplete-container {
+  position: relative;
+}
+
+.autocomplete-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.autocomplete-item:hover {
+  background-color: #f4f4f4;
+}
+
+
+
+.profile-picture-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.default-profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  border: 2px dashed #ccc;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.user-icon {
+  font-size: 4rem;
+  color: #aaa;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.profile-picture-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-picture-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.address-input {
+  width: 100%;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+.close-button {
+  background-color: #7d2ae8;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.download-button{
+  margin-top: 10px;
+}

@@ -1,0 +1,109 @@
+
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+
+}
+
+h1, h2, h4 {
+  color: #6a0dad; 
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+body{
+   background-color: #f0f0f0; 
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  min-height:210px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.mobileNumberBox, .otpBox {
+  text-align: center;
+}
+
+.mobileNumberInputContainer {
+  margin-bottom: 15px;
+}
+
+.mobileNumberInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.otpInputContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.otpInput {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.otpInput:focus {
+  border-color: #6a0dad;
+}
+
+.submitButton, .resendButton {
+  background-color: #6a0dad;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submitButton:hover, .resendButton:hover {
+  background-color: #5a0a9e;
+}
+
+.submitButton:disabled, .resendButton:disabled {
+  background-color: #9b5baf;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: 15px;
+}
+
+.resendMessage {
+  color: #5bc0de;
+  font-size: 0.875rem;
+  margin-top: 15px;
+}

@@ -1,0 +1,394 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar .profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  color: #6a1b9a; 
+  font-size: 2rem;
+}
+
+.dashboard-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar .nav-links a {
+      margin: 0.5rem 0;
+  }
+
+  .navbar .profile-container {
+      flex-direction: column;
+  }
+
+  .navbar .profile-pic {
+      margin: 0.5rem 0;
+  }
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc; 
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.default-user-icon {
+  font-size: 30px;
+  cursor: pointer; 
+  font-weight: bolder;
+  color: black;
+}
+
+.profile-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.profile-form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #7d2ae8;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan-title {
+  color: #7d2ae8;
+}
+
+.plan-description {
+  color: #666;
+}
+
+.plan-price {
+  color: #7d2ae8; 
+  font-weight: bold;
+}
+
+.plan-button {
+  background: #7d2ae8; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.plan-button:hover {
+  background: #5c1aab;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.plan-upgrade-button {
+  padding: 14px;
+  font-size: 20px;
+  background-color: #7d2ae8;
+  border: none;
+  color: white;
+}
+
+.plans-container p {
+  font-size: 18px;
+}
+
+.plan-cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.plan-cards-section .plan-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.plan-cards-section .plan-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plan-cards-section .current-plan {
+  border: 2px solid #6a0dad; /* Purple border */
+  background-color: #f5f0ff; /* Light purple background */
+  box-shadow: 0 4px 8px rgba(106, 13, 173, 0.2); /* Slight purple shadow */
+}
+
+.disabled {
+  opacity: 0.7;
+  pointer-events: none; /* Disable all interactions */
+}
+
+.disabled .plan-button {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.plans-overlay {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.plans-container {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.plan-card-section {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures the cards stay in a single row */
+  gap: 16px; /* Adds space between the cards */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.plan-card {
+  flex: 1 1 300px; /* Allows cards to grow and shrink, but have a base width of 300px */
+  max-width: 300px; /* Ensures cards do not exceed this width */
+}
+
+.plans-grid {
+  display: flex;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-button:hover {
+  background: #f0f0f0;
+}
+
+.close-button::after {
+  content: '×';
+  font-size: 20px;
+  color: #333;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+}
+
+.plan-card h2 {
+  font-size: 1.5em;
+}
+
+.plan-card p {
+  color: #666;
+}
+
+.plan-card .plan-button {
+  margin-top: 10px;
+}
+.disabled {
+  opacity: 0.5; /* Reduce opacity to make it look disabled */
+  pointer-events: none; /* Disable all interactions */
+  background-color: #f0f0f0; /* Greyish background color */
+}
+
+.disabled .plan-button {
+  background-color: #ccc; /* Grey background color for the button */
+  color: #999; /* Grey text color for the button */
+  cursor: not-allowed; /* Show that the button is not clickable */
+  border: 1px solid #ddd; /* Light grey border */
+}
+
+.disabled .plan-card {
+  background-color: #e0e0e0; /* Light grey background for disabled card */
+  border: 1px solid #ccc; /* Light grey border */
+  color: #999; /* Grey text color */
+}
+.plan-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.current-plan {
+  border-color: #0070f3;
+  background-color: #e0f2ff; /* Light blue for current plan */
+}
+
+.disabled-plan {
+  background-color: #f5f5f5; /* Light grey for disabled plans */
+  color: #999; /* Grey text color */
+  cursor: not-allowed;
+  opacity: 0.6; /* Slightly transparent */
+}
+
+.plan-button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.plan-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

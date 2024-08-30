@@ -1,0 +1,86 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+ 
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  animation: pulse 10s infinite;
+  z-index: -1;
+}
+
+
+@keyframes pulse {
+  0% {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+.loader-container {
+  margin-bottom: 20px;
+}
+
+
+.title {
+  font-size: 1.8rem;
+  color: #7d2ae8;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+
+.icon-container {
+  margin-bottom: 20px;
+}
+
+
+.continue-button {
+  background-color: #7d2ae8;
+ 
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.continue-button:hover {
+  background-color: #5a1b7b;
+  transform: scale(1.05);
+}
+
+
+.react-loader-spinner {
+  border-color: #7d2ae8;
+}
+.social_login_buttons button{
+  border:none;
+}
+button{
+  border:none!important;
+}
